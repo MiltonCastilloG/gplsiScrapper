@@ -10,26 +10,20 @@ def generate_xml_from_dictionary(parsed_content, title):
     for question_index, question_answers in enumerate(parsed_content):
         question_xml = etree.Element('question')
         num_question = etree.Element('numQuestion')
-        num_question.text = str(question_index)
+        num_question.text = str(question_index+1)
         question_xml.append(num_question)
         text_question = etree.Element('textQuestion')
         text_question.text = question_answers["question"]
         question_xml.append(text_question)
-        ###### ERASE THIS BLOCK LATER #######
-        correct_answer = etree.Element('correctAnswer')
-        correct_answer.text = str(1)
-        question_xml.append(correct_answer)
-        ###### ERASE THIS BLOCK LATER #######
         all_answers_xml = etree.Element('answers')
         for answer_index, answer in enumerate(question_answers["answers"]):
-            # validation to make if we have a correct_answer true
-            # if answer["coorrect_answer"] == True
-            #     correct_answer = etree.Element('correctAnswer')
-            #     correct_answer.text = str(answer_index)
-            #     question_xml.append(correct_answer)
+            if answer["correct_answer"] == True:
+                correct_answer = etree.Element('correctAnswer')
+                correct_answer.text = str(answer_index+1)
+                question_xml.append(correct_answer)
             answer_xml = etree.Element('answer')
             num_option = etree.Element('numOption')
-            num_option.text = str(answer_index)
+            num_option.text = str(answer_index+1)
             answer_xml.append(num_option)
             text_answer = etree.Element('textAnswer')
             text_answer.text = answer["text"]
@@ -46,3 +40,16 @@ def create_xml_file(file_title, file_content, file_path=""):
     file.write(file_content.decode('utf-8'))
     file.close()
     return os.path.abspath(file_complete_path+".xml")
+
+def get_text_from_file(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            return file.read()
+    except:
+        return None
+
+def create_xml_folder(folder_name="/xml"):
+    folder_dir = os.getcwd() + folder_name
+    if not os.path.exists(folder_dir):
+        os.mkdir(folder_dir)
+    return folder_dir

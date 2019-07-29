@@ -1,171 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <test>
-  <language>
-	C++: Constructor y destructor	</language>
+  <language>C++: Constructor y destructor</language>
   <questions>
     <question>
       <numQuestion>0</numQuestion>
-      <textQuestion>¿Cuál de las siguientes declaraciones es verdadera?</textQuestion>
-      <correctAnswer>1</correctAnswer>
-      <answers>
-        <answer>
-          <numOption>0</numOption>
-          <textAnswer>El constructor de copia recibe como argumento un objeto del mismo tipo pasado por referencia o por valor</textAnswer>
-        </answer>
-        <answer>
-          <numOption>1</numOption>
-          <textAnswer>Si un objeto se sale de ámbito entonces se invoca automáticamente al destructor de ese objeto</textAnswer>
-        </answer>
-        <answer>
-          <numOption>2</numOption>
-          <textAnswer>El constructor de copia sustituye al operador asignación cuando no se ha definido</textAnswer>
-        </answer>
-        <answer>
-          <numOption>3</numOption>
-          <textAnswer>Si no se proporciona un destructor, el compilador crea automáticamente uno que contiene las instrucciones del constructor por defecto pero en orden inverso</textAnswer>
-        </answer>
-      </answers>
-    </question>
-    <question>
-      <numQuestion>1</numQuestion>
-      <textQuestion>Para inicializar los datos miembro de una clase, se emplea</textQuestion>
-      <correctAnswer>1</correctAnswer>
-      <answers>
-        <answer>
-          <numOption>0</numOption>
-          <textAnswer>Constructor</textAnswer>
-        </answer>
-        <answer>
-          <numOption>1</numOption>
-          <textAnswer>Destructor</textAnswer>
-        </answer>
-        <answer>
-          <numOption>2</numOption>
-          <textAnswer>Se inicializan automáticamente</textAnswer>
-        </answer>
-        <answer>
-          <numOption>3</numOption>
-          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
-        </answer>
-      </answers>
-    </question>
-    <question>
-      <numQuestion>2</numQuestion>
-      <textQuestion>En la sobrecarga de funciones, para que sea correcta, las funciones se tienen que distinguir por</textQuestion>
-      <correctAnswer>1</correctAnswer>
-      <answers>
-        <answer>
-          <numOption>0</numOption>
-          <textAnswer>El número de los parámetros</textAnswer>
-        </answer>
-        <answer>
-          <numOption>1</numOption>
-          <textAnswer>El orden de los parámetros</textAnswer>
-        </answer>
-        <answer>
-          <numOption>2</numOption>
-          <textAnswer>El tipo de los parámetros</textAnswer>
-        </answer>
-        <answer>
-          <numOption>3</numOption>
-          <textAnswer>Todas las respuestas son correctas</textAnswer>
-        </answer>
-      </answers>
-    </question>
-    <question>
-      <numQuestion>3</numQuestion>
-      <textQuestion>¿Qué valor debe devolver un destructor?</textQuestion>
-      <correctAnswer>1</correctAnswer>
-      <answers>
-        <answer>
-          <numOption>0</numOption>
-          <textAnswer>Un puntero a la clase</textAnswer>
-        </answer>
-        <answer>
-          <numOption>1</numOption>
-          <textAnswer>Un objeto de la clase</textAnswer>
-        </answer>
-        <answer>
-          <numOption>2</numOption>
-          <textAnswer>Un código de estado que indica si la clase se ha destruido correctamente</textAnswer>
-        </answer>
-        <answer>
-          <numOption>3</numOption>
-          <textAnswer>Los destructores no devuelven un valor</textAnswer>
-        </answer>
-      </answers>
-    </question>
-    <question>
-      <numQuestion>4</numQuestion>
-      <textQuestion>Después de invocar al destructor de un objeto</textQuestion>
-      <correctAnswer>1</correctAnswer>
-      <answers>
-        <answer>
-          <numOption>0</numOption>
-          <textAnswer>No se puede acceder a los miembros de dicho objeto</textAnswer>
-        </answer>
-        <answer>
-          <numOption>1</numOption>
-          <textAnswer>Se puede acceder a los miembros de dicho objeto siempre que el objeto sea constante</textAnswer>
-        </answer>
-        <answer>
-          <numOption>2</numOption>
-          <textAnswer>Se puede acceder a los miembros de dicho objeto sin problema</textAnswer>
-        </answer>
-        <answer>
-          <numOption>3</numOption>
-          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
-        </answer>
-      </answers>
-    </question>
-    <question>
-      <numQuestion>5</numQuestion>
-      <textQuestion>Una clase puede tener</textQuestion>
-      <correctAnswer>1</correctAnswer>
-      <answers>
-        <answer>
-          <numOption>0</numOption>
-          <textAnswer>Todos los constructores que se desee</textAnswer>
-        </answer>
-        <answer>
-          <numOption>1</numOption>
-          <textAnswer>Sólo el constructor por defecto y el constructor de copia</textAnswer>
-        </answer>
-        <answer>
-          <numOption>2</numOption>
-          <textAnswer>Un destructor por cada constructor</textAnswer>
-        </answer>
-        <answer>
-          <numOption>3</numOption>
-          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
-        </answer>
-      </answers>
-    </question>
-    <question>
-      <numQuestion>6</numQuestion>
-      <textQuestion>El constructor de copia</textQuestion>
-      <correctAnswer>1</correctAnswer>
-      <answers>
-        <answer>
-          <numOption>0</numOption>
-          <textAnswer>Crea un objeto a partir de un objeto cualquiera</textAnswer>
-        </answer>
-        <answer>
-          <numOption>1</numOption>
-          <textAnswer>Crea un objeto a partir de un objeto de la misma clase</textAnswer>
-        </answer>
-        <answer>
-          <numOption>2</numOption>
-          <textAnswer>Crea un objeto que es un puntero al objeto copiado</textAnswer>
-        </answer>
-        <answer>
-          <numOption>3</numOption>
-          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
-        </answer>
-      </answers>
-    </question>
-    <question>
-      <numQuestion>7</numQuestion>
       <textQuestion>Respecto a los constructores de una clase</textQuestion>
       <correctAnswer>1</correctAnswer>
       <answers>
@@ -188,7 +26,122 @@
       </answers>
     </question>
     <question>
-      <numQuestion>8</numQuestion>
+      <numQuestion>1</numQuestion>
+      <textQuestion>Una clase puede tener</textQuestion>
+      <correctAnswer>1</correctAnswer>
+      <answers>
+        <answer>
+          <numOption>0</numOption>
+          <textAnswer>Todos los constructores que se desee</textAnswer>
+        </answer>
+        <answer>
+          <numOption>1</numOption>
+          <textAnswer>Sólo el constructor por defecto y el constructor de copia</textAnswer>
+        </answer>
+        <answer>
+          <numOption>2</numOption>
+          <textAnswer>Un destructor por cada constructor</textAnswer>
+        </answer>
+        <answer>
+          <numOption>3</numOption>
+          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
+        </answer>
+      </answers>
+    </question>
+    <question>
+      <numQuestion>2</numQuestion>
+      <textQuestion>Después de invocar al destructor de un objeto</textQuestion>
+      <correctAnswer>1</correctAnswer>
+      <answers>
+        <answer>
+          <numOption>0</numOption>
+          <textAnswer>No se puede acceder a los miembros de dicho objeto</textAnswer>
+        </answer>
+        <answer>
+          <numOption>1</numOption>
+          <textAnswer>Se puede acceder a los miembros de dicho objeto siempre que el objeto sea constante</textAnswer>
+        </answer>
+        <answer>
+          <numOption>2</numOption>
+          <textAnswer>Se puede acceder a los miembros de dicho objeto sin problema</textAnswer>
+        </answer>
+        <answer>
+          <numOption>3</numOption>
+          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
+        </answer>
+      </answers>
+    </question>
+    <question>
+      <numQuestion>3</numQuestion>
+      <textQuestion>Para inicializar los datos miembro de una clase, se emplea</textQuestion>
+      <correctAnswer>1</correctAnswer>
+      <answers>
+        <answer>
+          <numOption>0</numOption>
+          <textAnswer>Constructor</textAnswer>
+        </answer>
+        <answer>
+          <numOption>1</numOption>
+          <textAnswer>Destructor</textAnswer>
+        </answer>
+        <answer>
+          <numOption>2</numOption>
+          <textAnswer>Se inicializan automáticamente</textAnswer>
+        </answer>
+        <answer>
+          <numOption>3</numOption>
+          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
+        </answer>
+      </answers>
+    </question>
+    <question>
+      <numQuestion>4</numQuestion>
+      <textQuestion>El constructor de copia se invoca</textQuestion>
+      <correctAnswer>1</correctAnswer>
+      <answers>
+        <answer>
+          <numOption>0</numOption>
+          <textAnswer>Cuando se pasa un objeto como parámetro a una función por referencia</textAnswer>
+        </answer>
+        <answer>
+          <numOption>1</numOption>
+          <textAnswer>Cuando una función devuelve un objeto por valor</textAnswer>
+        </answer>
+        <answer>
+          <numOption>2</numOption>
+          <textAnswer>Al asignar un objeto a otro objeto</textAnswer>
+        </answer>
+        <answer>
+          <numOption>3</numOption>
+          <textAnswer>Las anteriores respuestas no son correctas</textAnswer>
+        </answer>
+      </answers>
+    </question>
+    <question>
+      <numQuestion>5</numQuestion>
+      <textQuestion>En la sobrecarga de funciones, para que sea correcta, las funciones se tienen que distinguir por</textQuestion>
+      <correctAnswer>1</correctAnswer>
+      <answers>
+        <answer>
+          <numOption>0</numOption>
+          <textAnswer>El número de los parámetros</textAnswer>
+        </answer>
+        <answer>
+          <numOption>1</numOption>
+          <textAnswer>El orden de los parámetros</textAnswer>
+        </answer>
+        <answer>
+          <numOption>2</numOption>
+          <textAnswer>El tipo de los parámetros</textAnswer>
+        </answer>
+        <answer>
+          <numOption>3</numOption>
+          <textAnswer>Todas las respuestas son correctas</textAnswer>
+        </answer>
+      </answers>
+    </question>
+    <question>
+      <numQuestion>6</numQuestion>
       <textQuestion>¿Qué funciones debe de tener toda clase?</textQuestion>
       <correctAnswer>1</correctAnswer>
       <answers>
@@ -211,21 +164,67 @@
       </answers>
     </question>
     <question>
-      <numQuestion>9</numQuestion>
-      <textQuestion>El constructor de copia se invoca</textQuestion>
+      <numQuestion>7</numQuestion>
+      <textQuestion>¿Qué valor debe devolver un destructor?</textQuestion>
       <correctAnswer>1</correctAnswer>
       <answers>
         <answer>
           <numOption>0</numOption>
-          <textAnswer>Cuando se pasa un objeto como parámetro a una función por referencia</textAnswer>
+          <textAnswer>Un puntero a la clase</textAnswer>
         </answer>
         <answer>
           <numOption>1</numOption>
-          <textAnswer>Cuando una función devuelve un objeto por valor</textAnswer>
+          <textAnswer>Un objeto de la clase</textAnswer>
         </answer>
         <answer>
           <numOption>2</numOption>
-          <textAnswer>Al asignar un objeto a otro objeto</textAnswer>
+          <textAnswer>Un código de estado que indica si la clase se ha destruido correctamente</textAnswer>
+        </answer>
+        <answer>
+          <numOption>3</numOption>
+          <textAnswer>Los destructores no devuelven un valor</textAnswer>
+        </answer>
+      </answers>
+    </question>
+    <question>
+      <numQuestion>8</numQuestion>
+      <textQuestion>¿Cuál de las siguientes declaraciones es verdadera?</textQuestion>
+      <correctAnswer>1</correctAnswer>
+      <answers>
+        <answer>
+          <numOption>0</numOption>
+          <textAnswer>El constructor de copia recibe como argumento un objeto del mismo tipo pasado por referencia o por valor</textAnswer>
+        </answer>
+        <answer>
+          <numOption>1</numOption>
+          <textAnswer>Si un objeto se sale de ámbito entonces se invoca automáticamente al destructor de ese objeto</textAnswer>
+        </answer>
+        <answer>
+          <numOption>2</numOption>
+          <textAnswer>El constructor de copia sustituye al operador asignación cuando no se ha definido</textAnswer>
+        </answer>
+        <answer>
+          <numOption>3</numOption>
+          <textAnswer>Si no se proporciona un destructor, el compilador crea automáticamente uno que contiene las instrucciones del constructor por defecto pero en orden inverso</textAnswer>
+        </answer>
+      </answers>
+    </question>
+    <question>
+      <numQuestion>9</numQuestion>
+      <textQuestion>El constructor de copia</textQuestion>
+      <correctAnswer>1</correctAnswer>
+      <answers>
+        <answer>
+          <numOption>0</numOption>
+          <textAnswer>Crea un objeto a partir de un objeto cualquiera</textAnswer>
+        </answer>
+        <answer>
+          <numOption>1</numOption>
+          <textAnswer>Crea un objeto a partir de un objeto de la misma clase</textAnswer>
+        </answer>
+        <answer>
+          <numOption>2</numOption>
+          <textAnswer>Crea un objeto que es un puntero al objeto copiado</textAnswer>
         </answer>
         <answer>
           <numOption>3</numOption>

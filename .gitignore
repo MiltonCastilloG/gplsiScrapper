@@ -167,3 +167,7 @@ snap/
 prime/
 stage/
 pip-wheel-metadata/
+
+# project carpets
+xml/
+xml_solutions/
