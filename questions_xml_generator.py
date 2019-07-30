@@ -21,6 +21,10 @@ def generate_xml_from_dictionary(parsed_content, title):
                 correct_answer = etree.Element('correctAnswer')
                 correct_answer.text = str(answer_index+1)
                 question_xml.append(correct_answer)
+            elif answer["correct_answer"] is None:
+                correct_answer = etree.Element('correctAnswer')
+                correct_answer.text = "-1"
+                question_xml.append(correct_answer)
             answer_xml = etree.Element('answer')
             num_option = etree.Element('numOption')
             num_option.text = str(answer_index+1)

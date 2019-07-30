@@ -15,11 +15,11 @@ def get_questions_in_html(html_string, answer_list):
         for index, span in enumerate(options_list):
             if index % 2 != 0:
                 correct_answer_flag = False
-                if correct_answer is None:
-                    if index + 1 == len(options_list):
-                        correct_answer_flag = True
-                elif span.text == correct_answer:
+                if span.text == correct_answer:
                     correct_answer_flag = True
+                elif index + 1 == len(options_list):
+                        if correct_answer is None:
+                            correct_answer_flag = None
                 q["answers"].append({"correct_answer": correct_answer_flag, "text": span.text})
         questions_answers["content"].append(q)
     return questions_answers
